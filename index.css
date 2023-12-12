@@ -1,0 +1,40 @@
+.pageTitle {
+  font-size: 56px;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.video {
+  width: 50%;
+  animation-name: expand, spin;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes expand {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 50%;
+    height: 100%;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
